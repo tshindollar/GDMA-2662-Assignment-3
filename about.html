@@ -8,11 +8,128 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<title></title>
+<script src="https://kit.fontawesome.com/cc455b5c95.js" crossorigin="anonymous"></script>
+
+<title>Bedford-Foundation</title>
 
 </head>
-<body>
+<body id="about">
+
+    <header> <!-- background image here -->
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <a href="home.html"><img src="img/logo-bedford.png" alt="bedford-logo" data-rjs="2"></a>
+                </div>
+                <nav class="col-sm-12 col-lg-6">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="take-action.html">Take Action</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row col-center">
+                <div class="col-sm-12">
+                    <h1>What We Do</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper row">
+        <nav class="col-sm-12 col-lg-4">
+            <ul>
+                <li><p>About</p></li>
+                <li><a href="#what-we-do">What we do</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </nav>
+        <div class="col-sm-12 col-lg-8">
+            <section>
+                <p>Since 1950, we have led the effort to permanently protect nearly 110 million acres of wilderness. We have been at the forefront of nearly every major public lands victory.</p>
+
+                <h2>Our Mission</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. Maecenas luctus erat lobortis neque molestie, in scelerisque arcu sollicitudin. Donec blandit, arcu a dapibus iaculis, velit nisi luctus libero, eu maximus ligula diam eget ante. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis enim nibh</p>
+            </section>
+
+            <blockquote>
+                <p>Bedford has helped accomplish over 200 of its partners' major conservation goals. They inspire everyone to care for the planet.</p>
+                <footer>
+                    <p>&ndash; John Smith, Nature Conservancy Magazine</p>
+                </footer>
+            </blockquote>
+
+            <!-- should this be a row? -->
+            <section class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <header>
+                        <h2>Our Achhievements</h2>
+                    </header>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. Maecenas luctus erat lobortis neque molestie, in scelerisque arcu sollicitudin. Donec blandit, arcu a dapibus iaculis.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. Maecenas luctus erat lobortis neque molestie, in scelerisque arcu sollicitudin. Donec blandit, arcu a dapibus iaculis.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla/
+                        </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus. Maecenas luctus erat lobortis neque molestie, in scelerisque arcu sollicitudin.
+                        </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque enim non augue fringilla, sit amet vehicula orci faucibus.
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="row col-center">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <span class="fa-brands fa-facebook-f"></span>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+
+                <li id="insta-padding">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <span class="fa-brands fa-instagram"></span>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+                <li id="twitter-padding"> 
+                    <a href="https://twitter.com" target="_blank">
+                        <span class="fa-brands fa-twitter"></span>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row col-center">
+            <address>
+                <ul>
+                    <li><b>Address:</b> <a href="https://www.google.com/maps" target="_blank">459 Broadway, New York</a></li>
+                    <li><b>Phone:</b> <a href="tel:+18001234567">(212) 555-0123</a></li>
+                    <li><b>Email:</b> <a href="mailto:info@acton.com">template@gmail.com</a></li>
+                </ul>
+            </address>
+        </div>
+
+    </footer>
   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
