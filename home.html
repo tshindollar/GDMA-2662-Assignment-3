@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-<title>Bedford-Foundation</title>
+<title>Home | Bedford Foundation</title>
 
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
@@ -18,13 +18,13 @@
 
 </head>
 
-<body id="home">
+<body>
 
-    <header> <!-- background image here -->
+    <header id="home">
         <div class="wrapper">
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
-                    <a href="home.html"><img src="img/logo-bedford.png" alt="bedford-logo" data-rjs="2"></a>
+                    <a href="#"><img src="img/logo-bedford.png" alt="logo-bedford" data-rjs="2"></a>
                 </div>
                 <nav class="col-sm-12 col-lg-6">
                     <ul>
@@ -35,27 +35,21 @@
                 </nav>
             </div>
 
-            <div class="row col-center">
-                <div class="col-sm-12">
-                    <p>sustainability</p>
-                    <h1>Starts With You</h1>
-                    <p><a href="about.html">Learn More</a></p>
-                </div>
-            </div>
+            <p><span>sustainability</span><br>Starts With You</p>
+            <p><a href="about.html">Learn More</a></p>
         </div>
     </header>
 
     <main class="wrapper">
         <div class="row col-center">
-            <section class="col-sm-12 col-lg-8">
+            <div class="col-sm-12 col-lg-8">
                 <p>We conserve land through outreach, restoration, and research. </p>
-
                 <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</p>
-            </section>
+            </div>
         </div>
 
-        <div class="row col-center">
-            <section class="col-sm-12 col-lg-6">
+        <div class="row">
+            <section class="col-sm-12 col-lg-4">
                 <header>
                     <h2>About</h2>
                 </header>
@@ -63,7 +57,7 @@
                 <p><a href="about.html">Learn More</a></p>
             </section>
 
-            <section class="col-sm-12 col-lg-6">
+            <section class="col-sm-12 col-lg-4">
                 <header>
                     <h2>Take Action</h2>
                 </header>
@@ -75,9 +69,8 @@
     </main>
 
     <footer>
-
-        <div class="row col-center">
-            <ul>
+        <div>
+            <ul class="wrapper">
                 <li>
                     <a href="https://www.facebook.com" target="_blank">
                         <span class="fa-brands fa-facebook-f"></span>
@@ -100,22 +93,19 @@
             </ul>
         </div>
 
-        <div class="row col-center">
-            <address>
-                <ul>
-                    <li><b>Address:</b> <a href="https://www.google.com/maps" target="_blank">459 Broadway, New York</a></li>
-                    <li><b>Phone:</b> <a href="tel:+18001234567">(212) 555-0123</a></li>
-                    <li><b>Email:</b> <a href="mailto:info@acton.com">template@gmail.com</a></li>
-                </ul>
-            </address>
-        </div>
-
+        <address class="wrapper">
+            <ul>
+                <li><a href="https://www.google.com/maps/place/459+Broadway,+New+York,+NY+10013/data=!4m2!3m1!1s0x89c2598bd3fc4031:0x48b829f544b1ce3f?sa=X&ved=2ahUKEwj_1LCvw_D6AhXcj4kEHcAtAzIQ8gF6BAgVEAE" target="_blank">459 Broadway, New York</a></li>
+                <li><a href="tel:+12125550123">(212) 555-0123</a></li>
+                <li><a href="mailto:template@gmail.com">template@gmail.com</a></li>
+            </ul>
+        </address>
     </footer>
   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <script src="js/retina.js"></script>
+    <script src="js/functions.js"></script>
 
 </body>
 </html>
