@@ -266,7 +266,7 @@ img {
 -------------------------------------------------------------- */
 /* ----- HOME ----- */
 
-#home > header {
+#hero-home {
     background: url(../img/bg-home.jpg) center no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
