@@ -457,17 +457,48 @@ main nav li:last-child a {
     margin-top: 4em;
 }
 
-blockquote {
-    margin: 0;
-}
-
 #what-we-do p {
     margin-top: 1rem;
 }
 
-#achievements ul{
-    list-style-image: url(../img/tree.svg);
+/* #achievements li:before {
+    content: '';
+    width: 25px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 16px;
 }
+
+#achievements li:before {
+    background: url(../img/tree.svg) center no-repeat;
+    left: -10px;
+} */
+
+/* ----- Blockquote ----- */
+
+blockquote {
+    margin: 3.5em 0;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+blockquote p {
+    margin: 1.5em 0 0;
+}
+
+blockquote footer {
+    background-color: transparent;
+    margin: 0;
+}
+
+blockquote footer p {
+    color: #BDBCBC;
+    margin: 1em 0 2.5em;
+    font: 600 .9em 'Montserrat', sans-serif;
+}
+
+
 /* ----- TAKE ACTION ----- */
 
 #hero-take-action {
