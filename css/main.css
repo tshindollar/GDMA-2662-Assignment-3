@@ -33,42 +33,94 @@
     box-sizing: border-box;
 }
 
-/* html {
+html {
+    font: 1rem 'Montserrat', sans-serif;
 
-} */
+}
 
-/* @media screen and (min-width: 768px) {
-    html {
-
-    }
-} */
-
-/* @media screen and (min-width: 1024px) {
-    html {
-        
-    }
-} */
 
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
-/* ----- HERO ----- */
-
-img {
-    width: 100px;
+main {
+    text-align: center;
 }
 
 
-/* @media screen and (min-width: 768px) {
+/* ----- HERO ----- */
+
+img {
+    width: 140px;
+    margin-top: .6em;
+}
+
+header p:first-of-type,
+header h1 {
+    font: 700 2rem 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin: 2.3em 0 0;
+}
+
+.intro-p > p {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    margin: 5rem 0 0;
+}
 
 
-} */
+/* ----- TYPOGRAPHY ----- */
 
-/* @media screen and (min-width: 1024px) {
+h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 1.3em 0 0;
+    text-transform: uppercase;
+    color: #BDBCBC;
+    letter-spacing: .25em;
+}
 
-  
-} */
+
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    line-height: 1.7em;
+}
+
+i {
+    color: #F2F2F1;
+    font-size: 1rem;
+}
+
+/* ----- ANCHOR ----- */
+
+a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 600 .9rem 'Montserrat', sans-serif;
+}
+
+header p:last-of-type {
+    margin-bottom: 8em;
+}
+
+main a, 
+header p > a {
+    background-color: #4E9374;
+    border-radius: 18px;
+    padding: 9px 18px;
+    margin: 0 0 2em;
+
+}
+
+nav li:last-child a {
+    background-color: white;
+    color: #4E9374;
+    border-radius: 18px;
+    padding: 9px 18px;
+}
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -264,6 +316,30 @@ img {
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+
+#hero-about h1,
+#hero-take-action h1 {
+    margin: 1.8em 0 3em;
+}
+
+#hero-about,
+#hero-take-action {
+    text-align: center;
+}
+
+/* ----- NAV ----- */
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul {
+    padding: 1em 0;
+    margin: 0;
+}
+
+
 /* ----- HOME ----- */
 
 #hero-home {
@@ -274,6 +350,157 @@ img {
     -ms-background-size: cover;
     background-size: cover;
     padding: 1px 0;
+    text-align: center;
+}
+
+#hero-home span {
+    font: 2rem 'EB Garamond', serif;
+    font-style: italic;
+    color: white;
+    text-transform: lowercase;
+} 
+
+#hero-home h1 {
+    margin: 0;
+}
+
+#home-bg-about div {
+    background: url(../img/bg-about.jpg) center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-backgroun-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    padding: 140px 0;
+    margin-top: 2em;
+}
+
+#home-bg-take-action div {
+    background: url(../img/bg-take-action.jpg) center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-backgroun-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    padding: 140px 0;
+    margin-top: 3em;
+}
+
+header [class*='col-'] {
+    padding: 0;
+}
+
+/* ----- ABOUT ----- */
+
+#hero-about {
+    background: url(../img/bg-about.jpg) center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-backgroun-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    padding: 1px 0;
+}
+
+main nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+main nav a,
+main nav li:last-child a {
+    background-color: transparent;
+    color: #BDBCBC;
+}
+
+main nav li:first-child,
+main nav li:first-child p {
+    color: #1D6D49;
+    font-style: italic;
+    display: block;
+}
+
+main nav li:first-child p {
+    font-size: 1rem;
+    margin: 0 0 .25em;
+}
+
+main nav a,
+main nav li:last-child a {
+    padding: 0;
+    font-size: .8rem;
+}
+
+
+#mission,
+#achievements,
+#misson h2,
+#achievements h2 {
+    text-align: left;
+}
+
+#mission p,
+#achievements p {
+    margin-top: .5em;
+}
+
+#achievements li {
+    font: 1.2rem 'EB Garamond', serif;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+#mission h2,
+#achievements h2 {
+    margin-top: 4em;
+}
+
+blockquote {
+    margin: 0;
+}
+
+#what-we-do p {
+    margin-top: 1rem;
+}
+
+#achievements ul{
+    list-style-image: url(../img/tree.svg);
+}
+/* ----- TAKE ACTION ----- */
+
+#hero-take-action {
+    background: url(../img/bg-take-action.jpg) center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-backgroun-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    padding: 1px 0;
+}
+
+
+
+/* ----- FOOTER ----- */
+
+footer {
+    background-color: #1D6D49;
+    text-align: center;
+    margin-top: 5em;
+}
+
+footer > div {
+    background-color: #4E9374;
+}
+
+.fa-brands {
+    font-size: 1.2rem;
+}
+
+address li {
+    display: block;
+    margin: 1.5em 0;
 }
 
 /*--------------------------------------------------------------
