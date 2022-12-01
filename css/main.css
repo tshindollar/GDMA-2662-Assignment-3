@@ -8,11 +8,22 @@
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
 4.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors, Lists, Color
+        - Anchor 
+        - Hero
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
+        - Nav
+        - Hero 
+        - Grassy Mountain 
+        - Forest 
+        - Footer 
+        - Images 
+        - Intro-p
+        - Col-offset
+        - Blockquote
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-        - Alignment
+        - Green-btn
         - Screenreader
 --------------------------------------------------------------*/
 
