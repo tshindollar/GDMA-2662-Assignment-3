@@ -70,7 +70,7 @@ main {
 h2 {
     font-weight: 700;
     font-size: 1.1rem;
-    margin: 1.3em 0 0;
+    margin: 2.5em 0 0;
     text-transform: uppercase;
     color: #BDBCBC;
     letter-spacing: .25em;
@@ -97,7 +97,14 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-    
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
 }
 
 
@@ -105,7 +112,7 @@ ul {
 
     p, 
     h2 {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     p {
@@ -129,21 +136,23 @@ a {
 
 
 @media screen and (min-width: 768px) {
-    
+    a {
+        font-size: .95rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
 
     a {
         font-size: .8rem;
-        margin: 6px 0 6px 18px;
+        padding-bottom: 3px;
     }
 }
 
 /* ----- HERO ----- */
 
 img {
-    width: 140px;
+    width: 170px;
     margin-top: 1.5em;
 }
 
@@ -343,15 +352,14 @@ img {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-#hero-about h1,
-#hero-take-action h1 {
-    margin: 1.8em 0 3em;
-}
 
-#hero-about,
-#hero-home
-#hero-take-action {
-    text-align: center;
+/* ----- NAV ----- */
+
+main nav li:first-child,
+main nav li:first-child p,
+#achievements li:before {
+    display: block;
+    font-style: italic;
 }
 
 #mission,
@@ -361,49 +369,10 @@ img {
     text-align: left;
 }
 
-header [class*='col-'],
-#achievements [class*='col-'] {
-    padding: 0;
+main nav,
+header nav li:last-of-type a {
+    background-color: #fff;
 }
-
-#achievements ul,
-main nav a,
-main nav li:last-child a {
-    padding: 0;
-}
-
-main nav li:first-child,
-main nav li:first-child p,
-#achievements li:before {
-    display: block;
-}
-
-main nav a,
-main nav li:last-child a {
-    background-color: transparent;
-    color: #BDBCBC;
-}
-
-main nav li:first-child,
-main nav li:first-child p {
-    font-style: italic;
-}
-
-main nav li:last-child a {
-    font-size: .8rem;
-}
-
-#mission p,
-#achievements p {
-    margin-top: .5em;
-}
-
-#mission h2,
-#achievements h2 {
-    margin-top: 4em;
-}
-
-/* ----- NAV ----- */
 
 main nav,
 #achievements li {
@@ -411,45 +380,26 @@ main nav,
     left: 0;
 }
 
-nav li:last-child a:hover,
-main nav {
-    background-color: #fff;
+#mission p,
+#achievements p {
+    margin-top: .5em;
 }
 
-nav a:hover,
-address a:hover {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px 0;
-}
 
-nav li:last-child a,
-main a, 
-header p > a {
-    border-radius: 18px;
-    padding: 8px 18px;
+#mission h2 {
+    margin-top: 4em;
 }
 
 main nav a {
-    font-size: .9em;
+    padding: 0;
+    margin: 0;
+    font-size: .8rem;
+    background-color: transparent;
+    color: #BDBCBC;
 }
 
 nav li {
     margin: 0 8px;
-}
-
-nav li:last-child a {
-    color: #4E9374;
-    background-color: #fff;
-}
-
-.col-lg-4 a {
-    background-color: transparent;
-}
-
-main a, 
-header p > a {
-    background-color: #4E9374;
-    margin: 0 0 2em;
 }
 
 main nav {
@@ -461,6 +411,13 @@ main nav li:first-child p {
     color: #1D6D49;
     font-size: 1rem;
     margin: 0 0 .25em;
+}
+
+header nav li:last-of-type a {
+    color: #4E9374;
+    border-radius: 18px;
+    padding: 8px 18px;
+    margin: 0 0 2em;
 }
 
 #achievements li {
@@ -482,47 +439,61 @@ main nav li:first-child p {
     left: -3px;
 }
 
-address li {
-    display: block;
-    padding: 1em;
-
+#achievements [class*='col-'] {
+    padding: 0;
 }
 
+#achievements h2 {
+    margin: 4em 0 .6em;
+}
+
+
 @media screen and (min-width: 768px) {
-    header ul {
-        margin: 1em 0;
+
+    nav li {
+        margin: 0 12px;
     }
+
+    main nav li:first-child p {
+        font-size: 1.2rem;
+        margin-bottom: .6em;
+    }
+
+    main nav a {
+        font-size: 1rem;
+    }
+   
 }
 
 @media screen and (min-width: 1024px) {
+
+    main nav a:hover,
+    header nav li:last-of-type a:hover {
+        color: #4E9374;
+    }
+
+    main li:first-child,
+    main nav a:hover {
+        margin: 0;
+    }
 
     header nav {
         text-align: right;
     }
 
-    nav li:last-child a {
+    header nav li:last-of-type a {
         background-color: transparent;
         color: #fff;
         border: 1px #fff solid;
     }
-
-    nav li:last-child a:hover {
-        color: #4E9374;
+    
+    header nav li:last-of-type a:hover {
+        background-color: #fff;
     }
 
-    address {
-        padding: 2em 0;
-    }
-
-    address li {
-        padding: 0 1em;
-        display: inline-block;
-    }
-
-    #achievements li {
-        font-size: .9rem;
-        padding-left: 1.7em;
-    }
+    nav a:hover {
+        border-bottom: 1px solid #fff;
+    } 
 
     main li {
         display: block;
@@ -531,23 +502,21 @@ address li {
     }
 
     main nav a:hover {
-        color: #4E9374;
         background-color: transparent;
         border-radius: 0;
-    }
-
-    main a:hover, 
-    header p > a:hover {
-    background-color: #1D6D49;
-    }
+    }   
 
     main nav li:first-child p {
         font-size: .8rem;
     }
 
-    main li:first-child,
-    main nav a:hover {
-        margin: 0;
+    #achievements li {
+        font-size: .9rem;
+        padding-left: 1.7em;
+    }
+
+    #achievements li:before {
+        height: 26px;
     }
     
 }
@@ -555,14 +524,18 @@ address li {
 
 /* ----- HERO ----- */
 
-header {
-    text-align: center;
-}
-
 header p:first-of-type,
 header h1,
 #hero-home span {
     color: #fff;
+}
+
+header#bg-grassy-mountain,
+header#bg-forest,
+#hero-home h1,
+#hero-home  {
+    padding: 1px 0;
+    margin: 0;
 }
 
 header p:first-of-type,
@@ -572,18 +545,25 @@ header h1 {
     margin: 2.3em 0 0;
 }
 
+header [class*='col-'] {
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
 header p:last-of-type {
     margin-bottom: 8em;
 }
 
 #hero-home {
-    background: url(../img/bg-home.jpg) center no-repeat;
+    background: url(../img/bg-hiker.jpg) center no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-backgroun-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    padding: 1px 0;
 }
 
 #hero-home span {
@@ -592,42 +572,26 @@ header p:last-of-type {
     text-transform: lowercase;
 } 
 
-#hero-home h1 {
-    margin: 0;
-}
-
-#hero-about {
-    background: url(../img/bg-about.jpg) center no-repeat;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-backgroun-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    padding: 1px 0;
-}
-
-#hero-take-action {
-    background: url(../img/bg-take-action.jpg) center no-repeat;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-backgroun-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    padding: 1px 0;
-}
-
+ 
 @media screen and (min-width: 768px) {
-    #home-bg-about div,
-    #home-bg-take-action div {
-        margin-top: 0;
+
+    header p:first-of-type,
+    header h1 {
+        font-size: 3.5rem;
+        margin: 1.1em 0 0;
     }
-}   
+    
+    header ul {
+        margin: 1em 0;
+    }
+
+    #hero-home span {
+        font-size: 2.8rem;
+    }
+
+}
 
 @media screen and (min-width: 1024px) {
-
-    header {
-        text-align: center;
-    }
 
     #hero-home h1 {
         margin: 0;
@@ -635,11 +599,6 @@ header p:last-of-type {
 
     #hero-home span {
         font-size: 3.8rem;
-    }
-
-    #home-bg-about p,
-    #home-bg-take-action p {
-        margin: .4em 0 1.5em;
     }
 
     header p:first-of-type,
@@ -653,69 +612,21 @@ header p:last-of-type {
     }
 }
 
-/* ----- IMAGES ----- */
-
-#home-bg-about div,
-#home-bg-take-action div {
-    padding: 140px 0;
-}
-
-#home-bg-about div {
-    background: url(../img/bg-about.jpg) center no-repeat;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-backgroun-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    margin-top: 2em;
-}
-
-#home-bg-take-action div {
-    background: url(../img/bg-take-action.jpg) center no-repeat;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-backgroun-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    margin-top: 3em;
-}
-
-/* ----- INTRO - P ----- */
-
-.intro-p > p {
-    font-size: 1.5rem;
-    line-height: 1.4em;
-    margin: 3em 0 0;
-}
-
-.intro-p div {
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 1024px) {
-
-    .intro-p > p {
-        font-size: 1.7rem;
-    }
-
-    .intro-p div {
-        margin-bottom: 5em;
-    }
-
-    #take-action-main .intro-p {
-        margin: 0 auto;
-    }
-}
-
-/* ----- ABOUT ----- */
+/* ----- GRASSY MOUNTAIN ----- */
 
 
 #what-we-do p {
     margin-top: 1em;
 }
 
-#achievements h2 {
-    margin-bottom: .4em;
+
+#bg-grassy-mountain h1,
+#bg-forest h1 {
+    margin: 1.8em 0 3em;
+}
+
+#bg-grassy-mountain {
+    text-align: center;
 }
 
 
@@ -725,70 +636,19 @@ header p:last-of-type {
     }
 }
 
-/* ----- Blockquote ----- */
+/* ----- FOREST ----- */
 
-blockquote {
-    margin: 3.5em 0;
-    border-top: 1px #BDBCBC solid;
-    border-bottom: 1px #BDBCBC solid;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-blockquote p {
-    margin: 3.9em 0 0;
-}
-
-blockquote > p:before {
-    content: '“';
-    width: 25px;
-    height: 16px;
-    display: block;
-    position: absolute;
-    top: 24px;
-    left: 2.3em;
-    font: 500 4.1rem 'Montserrat', sans-serif;
-    color: #BDBCBC;
-}
-
-blockquote footer {
-    background-color: transparent;
-    margin: 0;
-}
-
-blockquote footer p {
-    color: #BDBCBC;
-    margin: 1em 0 2.5em;
-    font: 600 .9rem 'Montserrat', sans-serif;
-}
-
-@media screen and (min-width: 1024px) {
-    blockquote > p:before {
-        font-size: 5.75rem;
-        top: 23px;
-        left: 3.3em;
-    }
-
-    blockquote p {
-        margin: 6.3em 0 0;
-    }
-
-    blockquote > p {
-        font-size: 1.1rem;
-    }
-
-    blockquote footer p {
-        font-size: .8rem;
-    }
+#bg-forest {
+    text-align: center;
 }
 
 
-/* ----- TAKE ACTION ----- */
-
-
-#take-action-main section {
+#bg-forest section {
     margin-bottom: 1em;
+}
+
+#bg-forest h1 {
+    margin: 1.8em 0 3em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -819,14 +679,200 @@ footer li {
     margin: 0 0.3em;
 }
 
+address li {
+    display: block;
+    padding: 1em;
+}
+
+address a:hover {
+    border-bottom: 1px solid #fff;
+}
+
 
 @media screen and (min-width: 1024px) {
     .fa-brands {
         font-size: .9rem;
+        margin: 0 5px;
     }
 
     footer li {
         margin: 0;
+    }
+
+    address {
+        padding: 2em 0;
+    }
+
+    address li {
+        padding: 0 1em;
+        display: inline-block;
+    }
+}
+
+/* ----- IMAGES ----- */
+
+#bg-grassy-mountain {
+    background: url(../img/bg-grassy-mountain.jpg) center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-backgroun-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+#bg-forest {
+    background: url(../img/bg-forest.jpg) center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-backgroun-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+/* ----- INTRO - P ----- */
+
+.intro-p > p {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    margin: 3em 0 0;
+}
+
+.intro-p div {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .intro-p > p {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .intro-p > p {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .intro-p div {
+        margin-bottom: 2em;
+    }
+
+    #take-action-main .intro-p {
+        margin: 0 auto;
+        margin-bottom: 3.5em;
+    }
+}
+
+/* ----- COL-OFFSET ----- */
+
+.col-offset {
+    margin-top: 3em;
+}
+.col-offset div {
+    padding: 140px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .col-offset p {
+        margin: 1.3em 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .col-offset {
+        margin: 0;
+    }
+
+    .col-offset div {
+        margin-top: 0;
+    }
+
+    .col-offset p {
+        margin: .4em 0 1.5em;
+    }
+
+    .col-offset:first-child {
+        margin-left: calc(100% * 1 / 12);
+    }
+
+    .col-offset:last-child {
+        margin-right: calc(100% * 1 / 12);
+    }
+}  
+
+
+/* ----- Blockquote ----- */
+
+blockquote > p:before,
+blockquote footer p {
+    color: #BDBCBC;
+}
+
+blockquote {
+    margin: 3.5em 0;
+    border-top: 1px #BDBCBC solid;
+    border-bottom: 1px #BDBCBC solid;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+blockquote p {
+    margin: 3.9em 0 0;
+}
+
+blockquote > p:before {
+    content: '“';
+    width: 25px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 25px);
+    font: 500 4.1rem 'Montserrat', sans-serif;
+}
+
+blockquote footer {
+    background-color: transparent;
+    margin: 0;
+}
+
+blockquote footer p {
+    margin: 1em 0 2.5em;
+    font: 600 .9rem 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    blockquote footer p {
+        margin: 1.2em 0 2.5em;
+        font-size: .95rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    blockquote > p:before {
+        font-size: 4.75rem;
+        top: 23px;
+        left: 3.3em;
+    }
+
+    blockquote p {
+        margin: 5em 0 0;
+    }
+
+    blockquote > p {
+        font-size: 1.1rem;
+    }
+
+    blockquote footer p {
+        font-size: .8rem;
     }
 }
 
@@ -834,6 +880,22 @@ footer li {
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
+
+/* ----- GREEN-BTN ----- */
+
+.green-btn {
+    border-radius: 18px;
+    padding: 8px 18px;
+    background-color: #4E9374;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .green-btn:hover {
+        background-color: #1D6D49;
+    }
+}
 
 /* ----- SCREENREADER ----- */
 
