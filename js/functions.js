@@ -1,5 +1,5 @@
 // Create a condition that targets viewports at less than 768px wide
-const mediaQuery = window.matchMedia('(max-width: 768px)')
+const mediaQuery = window.matchMedia('(max-width: 1024px)')
 
 function handleTabletChange(e) {
 // Check if the media query is true
@@ -24,7 +24,7 @@ function handleTabletChange(e) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
-                scrollTop: target.offset().top-100
+                scrollTop: target.offset().top-115
                 }, 1000, function() {
                 // Callback after animation
                 // Must change focus!
@@ -64,7 +64,7 @@ function handleTabletChange(e) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
-                scrollTop: target.offset().top-50
+                scrollTop: target.offset().top
                 }, 1000, function() {
                 // Callback after animation
                 // Must change focus!

@@ -15,15 +15,16 @@
 6.0 - Components: specific designed components
         - Nav
         - Hero 
-        - Grassy Mountain 
-        - Forest 
+        - Achievements
+        - Missions
+        - What-We-Do
+        - Blockquote
         - Footer 
         - Images 
-        - Intro-p
-        - Col-offset
-        - Blockquote
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-        - Green-btn
+        - Font-Awesome
+        - Btn-Primary
+        - Intro-P
         - Screenreader
 --------------------------------------------------------------*/
 
@@ -81,7 +82,7 @@ main {
 h2 {
     font-weight: 700;
     font-size: 1.1rem;
-    margin: 2.5em 0 0;
+    margin: 1.5em 0 0;
     text-transform: uppercase;
     color: #BDBCBC;
     letter-spacing: .25em;
@@ -363,21 +364,12 @@ img {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-
 /* ----- NAV ----- */
 
 main nav li:first-child,
-main nav li:first-child p,
-#achievements li:before {
+main nav li:first-child p {
     display: block;
     font-style: italic;
-}
-
-#mission,
-#achievements,
-#mission h2,
-#achievements h2 {
-    text-align: left;
 }
 
 main nav,
@@ -385,20 +377,9 @@ header nav li:last-of-type a {
     background-color: #fff;
 }
 
-main nav,
-#achievements li {
+main nav {
     top: 0;
     left: 0;
-}
-
-#mission p,
-#achievements p {
-    margin-top: .5em;
-}
-
-
-#mission h2 {
-    margin-top: 4em;
 }
 
 main nav a {
@@ -431,33 +412,6 @@ header nav li:last-of-type a {
     margin: 0 0 2em;
 }
 
-#achievements li {
-    margin: 0 0 .7em;
-    position: relative;
-    padding-left: 1.5em;
-    font: 1.2rem 'EB Garamond', serif;
-    line-height: 1.7em;
-    margin: 0 0 1em;
-}
-
-#achievements li:before {
-    content: '';
-    width: 25px;
-    height: 30px;
-    position: absolute;
-    top: 2px;
-    background: url(../img/tree.svg) center no-repeat;
-    left: -3px;
-}
-
-#achievements [class*='col-'] {
-    padding: 0;
-}
-
-#achievements h2 {
-    margin: 4em 0 .6em;
-}
-
 
 @media screen and (min-width: 768px) {
 
@@ -473,7 +427,6 @@ header nav li:last-of-type a {
     main nav a {
         font-size: 1rem;
     }
-   
 }
 
 @media screen and (min-width: 1024px) {
@@ -512,6 +465,10 @@ header nav li:last-of-type a {
         text-align: left;
     }
 
+    main nav {
+        align-self: flex-start;
+    }
+
     main nav a:hover {
         background-color: transparent;
         border-radius: 0;
@@ -519,15 +476,6 @@ header nav li:last-of-type a {
 
     main nav li:first-child p {
         font-size: .8rem;
-    }
-
-    #achievements li {
-        font-size: .9rem;
-        padding-left: 1.7em;
-    }
-
-    #achievements li:before {
-        height: 26px;
     }
     
 }
@@ -556,12 +504,20 @@ header h1 {
     margin: 2.3em 0 0;
 }
 
-header [class*='col-'] {
-    padding: 0;
+#bg-forest h1,
+#bg-grassy-mountain h1,
+#bg-forest h1 {
+    margin: 1.8em 0 3em;
 }
 
-header {
+header,
+#bg-forest,
+#bg-grassy-mountain {
     text-align: center;
+}
+
+header [class*='col-'] {
+    padding: 0;
 }
 
 header p:last-of-type {
@@ -599,7 +555,6 @@ header p:last-of-type {
     #hero-home span {
         font-size: 2.8rem;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -623,23 +578,95 @@ header p:last-of-type {
     }
 }
 
-/* ----- GRASSY MOUNTAIN ----- */
 
+/* ----- ACHIEVEMENTS ----- */
+
+#achievements,
+#achievements h2 {
+    text-align: left;
+}
+
+#achievements [class*='col-'],
+#achievements ul {
+    padding: 0;
+}
+
+#achievements li {
+    margin: 0 0 .7em;
+    position: relative;
+    padding-left: 1.5em;
+    font: 1.2rem 'EB Garamond', serif;
+    line-height: 1.7em;
+    margin: 0 0 1em;
+}
+
+#achievements li:before {
+    content: '';
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    background: url(../img/tree.svg) center no-repeat;
+    left: -3px;
+}
+
+#achievements h2 {
+    margin: 4em 0 .4em;
+}
+
+#achievements p {
+    margin-top: .5em;
+}
+
+#achievements li:before {
+    display: block;
+    font-style: italic;
+}
+
+#achievements li {
+    top: 0;
+    left: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    #achievements ul {
+        padding: 10px 5px;
+    }
+
+    #achievements li {
+        font-size: .9rem;
+        padding-left: 1.7em;
+    }
+    
+    #achievements li:before {
+        height: 26px;
+    }
+}
+
+
+/* ----- MISSIONS ----- */
+
+#mission,
+#mission h2 {
+    text-align: left;
+}
+
+#mission p {
+    margin-top: .5em;
+}
+
+#mission h2 {
+    margin-top: 4em;
+}
+
+
+/* ----- WHAT-WE-DO ----- */
 
 #what-we-do p {
     margin-top: 1em;
 }
-
-
-#bg-grassy-mountain h1,
-#bg-forest h1 {
-    margin: 1.8em 0 3em;
-}
-
-#bg-grassy-mountain {
-    text-align: center;
-}
-
 
 @media screen and (min-width: 1024px) {
     #what-we-do {
@@ -647,28 +674,72 @@ header p:last-of-type {
     }
 }
 
-/* ----- FOREST ----- */
+/* ----- BLOCKQUOTE ----- */
 
-#bg-forest {
-    text-align: center;
+blockquote > p:before,
+blockquote footer p {
+    color: #BDBCBC;
 }
 
-
-#bg-forest section {
-    margin-bottom: 1em;
+blockquote {
+    margin: 3.5em 0;
+    border-top: 1px #BDBCBC solid;
+    border-bottom: 1px #BDBCBC solid;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-#bg-forest h1 {
-    margin: 1.8em 0 3em;
+blockquote p {
+    margin: 3.9em 0 0;
 }
 
-@media screen and (min-width: 1024px) {
+blockquote > p:before {
+    content: '“';
+    width: 25px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 25px);
+    font: 500 4.1rem 'Montserrat', sans-serif;
+}
 
-    .col-lg-4 p {
-        margin-top: .5em;
+blockquote footer {
+    background-color: transparent;
+    margin: 0;
+}
+
+blockquote footer p {
+    margin: 1em 0 2.5em;
+    font: 600 .9rem 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    blockquote footer p {
+        margin: 1.2em 0 2.5em;
+        font-size: .95rem;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    blockquote > p:before {
+        font-size: 4.75rem;
+        top: 23px;
+    }
+
+    blockquote p {
+        margin: 5em 0 0;
+    }
+
+    blockquote > p {
+        font-size: 1.1rem;
+    }
+
+    blockquote footer p {
+        font-size: .8rem;
+    }
+}
 
 /* ----- FOOTER ----- */
 
@@ -680,10 +751,6 @@ footer {
 
 footer > div {
     background-color: #4E9374;
-}
-
-.fa-brands {
-    font-size: 1.2rem;
 }
 
 footer li {
@@ -699,12 +766,7 @@ address a:hover {
     border-bottom: 1px solid #fff;
 }
 
-
 @media screen and (min-width: 1024px) {
-    .fa-brands {
-        font-size: .9rem;
-        margin: 0 5px;
-    }
 
     footer li {
         margin: 0;
@@ -740,8 +802,39 @@ address a:hover {
     background-size: cover;
 }
 
+
+
+/*--------------------------------------------------------------
+    7.0 - UTILITY
+-------------------------------------------------------------- */
+
+/* ----- FONT-AWESOME ----- */
+
+.fa-brands {
+    font-size: 1.2rem;
+}
+
 @media screen and (min-width: 1024px) {
-    
+    .fa-brands {
+        font-size: .9rem;
+        margin: 0 5px;
+    }
+}
+
+/* ----- BTN-PRIMARY ----- */
+
+.btn-primary {
+    border-radius: 18px;
+    padding: 8px 18px;
+    background-color: #4E9374;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .btn-primary:hover {
+        background-color: #1D6D49;
+    }
 }
 
 /* ----- INTRO - P ----- */
@@ -761,7 +854,6 @@ address a:hover {
         font-size: 1.8rem;
     }
 }
-
 
 @media screen and (min-width: 1024px) {
 
@@ -816,97 +908,7 @@ address a:hover {
     .col-offset:last-child {
         margin-right: calc(100% * 1 / 12);
     }
-}  
-
-
-/* ----- Blockquote ----- */
-
-blockquote > p:before,
-blockquote footer p {
-    color: #BDBCBC;
-}
-
-blockquote {
-    margin: 3.5em 0;
-    border-top: 1px #BDBCBC solid;
-    border-bottom: 1px #BDBCBC solid;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-blockquote p {
-    margin: 3.9em 0 0;
-}
-
-blockquote > p:before {
-    content: '“';
-    width: 25px;
-    height: 16px;
-    display: block;
-    position: absolute;
-    top: 24px;
-    left: calc(50% - 25px);
-    font: 500 4.1rem 'Montserrat', sans-serif;
-}
-
-blockquote footer {
-    background-color: transparent;
-    margin: 0;
-}
-
-blockquote footer p {
-    margin: 1em 0 2.5em;
-    font: 600 .9rem 'Montserrat', sans-serif;
-}
-
-@media screen and (min-width: 768px) {
-    blockquote footer p {
-        margin: 1.2em 0 2.5em;
-        font-size: .95rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    blockquote > p:before {
-        font-size: 4.75rem;
-        top: 23px;
-        left: 3.3em;
-    }
-
-    blockquote p {
-        margin: 5em 0 0;
-    }
-
-    blockquote > p {
-        font-size: 1.1rem;
-    }
-
-    blockquote footer p {
-        font-size: .8rem;
-    }
-}
-
-
-/*--------------------------------------------------------------
-    7.0 - UTILITY
--------------------------------------------------------------- */
-
-/* ----- GREEN-BTN ----- */
-
-.green-btn {
-    border-radius: 18px;
-    padding: 8px 18px;
-    background-color: #4E9374;
-    color: #fff;
-}
-
-@media screen and (min-width: 1024px) {
-
-    .green-btn:hover {
-        background-color: #1D6D49;
-    }
-}
+} 
 
 /* ----- SCREENREADER ----- */
 
